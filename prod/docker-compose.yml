@@ -16,7 +16,7 @@ services:
       timeout: 5s
       retries: 5
     networks: &loki-dns
-      eazybank:
+      devskillslearning:
         aliases:
           - loki
 
@@ -252,7 +252,7 @@ services:
       service: microservice-eureka-config
 
   loans:
-    image: "devskillsleaning/loans:v6.0"
+    image: "devskillslearning/loans:v6.0"
     container_name: loans-ms
     ports:
       - "8090:8090"
